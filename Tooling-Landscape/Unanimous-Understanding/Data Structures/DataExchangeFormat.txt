@@ -85,9 +85,15 @@ class SwBundle{
 Enum type
 }
 
+class ConstraintFullfillment{
+	Enum status
+	Text fulfillmentStatement
+}
+
 License "1..*" -- "1..*" DigitalArtifact
 License "0..*" - "0..*" Constraint
 Constraint "0..*" - "0..*" ProductInformation
+(Deliverable, License) .. ConstraintFullfillment
 CopyrightECCInformation "0..*" -- DigitalArtifact 
 Deliverable - SwBundle 
 Deliverable -- DisclosureDocument 
