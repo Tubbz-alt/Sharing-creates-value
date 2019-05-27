@@ -77,6 +77,7 @@ Scope: other
 This class cimplements how the different constraints are fulfilled in a certain deliverable. It might be that it has side effects on the DigitalArtifact in case of files, which have to be removed
 ### Definition
 Status := Enumartion {open, not-applicable, accepted, mitigated,closed, workaround}
+
 FulfillmentStatement := textfield (a description what exactly is done to fulfill/mitigate the constraint)
 
 ## Data model meta information
