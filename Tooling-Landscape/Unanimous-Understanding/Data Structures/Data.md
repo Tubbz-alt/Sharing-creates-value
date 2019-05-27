@@ -73,6 +73,12 @@ Description: license determines the jurisdiction – US
 
 Scope: other
 
+## ConstraintFullfillment
+This class cimplements how the different constraints are fulfilled in a certain deliverable. It might be that it has side effects on the DigitalArtifact in case of files, which have to be removed
+### Definition
+Status := Enumartion {open, not-applicable, accepted, mitigated,closed, workaround}
+FulfillmentStatement := textfield (a description what exactly is done to fulfill/mitigate the constraint)
+
 ## Data model meta information
 This is the meta information of the model itself, like name, version, etc.
 ### Defintion
@@ -81,6 +87,7 @@ Name := String
 Version := String
 
 Unique Identifier := String (e.g. SHA hash)
+
 
 ## Deliverable
 A deliverable implements a real deliverable of a product. A product can be made available in different formats, like as container(s), an executable, an image etc. The different options are modelled as deliverable
